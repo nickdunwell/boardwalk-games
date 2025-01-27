@@ -22,8 +22,8 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
-    
 }
+
 h1,
 h2 {
     text-transform: uppercase;
@@ -32,6 +32,7 @@ h2 {
 h2 {
     margin-bottom: 2rem;
 }
+
 .sub-heading-color {
     color: var(--highlight-color);
 }
@@ -39,17 +40,20 @@ h2 {
 .section {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
 }
+
 /* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
+
 #navbar .logo {
     width: 30px;
 }
 
 /* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
@@ -64,39 +68,81 @@ h2 {
 
 #services .card {
     margin-bottom: 1.5rem;
-
 }
-/* grid visualisation CSS for testing 
 
-.container,
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
+/* Footer / contact */
+
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .sub-heading-color {
+    color: var(--highlight-color-light);
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--highlight-color-light);
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+
+#contact .table-dark * {
+background-color: transparent;
+}
+/* grid visualisation CSS for testing */
+
+/* .container,
 .row {
     border: 2px solid black;
 }
 
 .col-12 {
     border: 2px solid white;
-    background-color: lightgrey;
-}
-    */
+    background-color: lightgray;
+} */
 
-    /* media query */
+/* Media queries */
 
-    /* medium devices (tablets, 768px and up) */
-    @media screen and (min-width: 768px) {
-    /* make all service cards the same height for consistency */
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
 }
-/* large devices (tablets, 992px and up) */
+
+/* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
-    /* make all service cards the same height for consistency */
+    /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: auto;
     }
 }
 
-/* medium devices (tablets, 1200px and up) */
+/* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     /* make all service cards the same height for consistency */
     #services .card-body {
@@ -104,11 +150,10 @@ h2 {
     }
 }
 
-/* xxl devices (tablets, 1400px and up) */
+/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
     }
 }
-    
